@@ -1,4 +1,4 @@
-# Pi-keylogger
+# Pi-Keylogger
 Raspberry Pi Zero and Arduino Pro Micro USB Hardware Keylogger. A fork of the project [K3yP1](https://github.com/unknwncharlie/K3yP1). 
 
 ## Disclaimer
