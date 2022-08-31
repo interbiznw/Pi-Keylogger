@@ -3,7 +3,7 @@ echo "Installing git and pip"
 apt install git pip -y # Installing git for next step and pip for python libraries
 
 echo "Downloading and extracting repository"
-git clone https://github.com/apacelus/Pi-Keylogger --branch=master ~/Pi-Keylogger # Cloning the repository to a new directory
+git clone https://github.com/interbiznw/Pi-Keylogger --branch=master ~/Pi-Keylogger # Cloning the repository to a new directory
 
 echo "Creating log directory"
 mkdir ~/Pi-Keylogger/log # Creating log directory
