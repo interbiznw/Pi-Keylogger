@@ -2,7 +2,7 @@
 Description=Handle ctrl alt delete
 
 [Service]
-ExecStart=/bin/sh -c "sudo python3 /home/pi/Pi-Keylogger/cad.py"
+ExecStart=/bin/sh -c "sudo python3 ~/Pi-Keylogger/cad.py"
 
 [Install]
 WantedBy=multi-user.target
